@@ -1,3 +1,4 @@
+import os
 import flet as ft
 from pantallaUno import pantalla_uno
 from pantallaDos import pantalla_dos
@@ -192,4 +193,8 @@ def main(page: ft.Page):
     contenido.content = pantalla_uno()
     page.update()
 
-ft.app(target=main)
+if __name__ == "__main__":
+    # Obtiene el puerto asignado dinámicamente por Render
+    port = int(os.environ.get("PORT", 800))  # 8000 es el valor por defecto para pruebas locales
+    # Inicia la aplicación usando Flet en el puerto correcto
+    ft.app(target=main)
