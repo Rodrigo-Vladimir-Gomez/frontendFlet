@@ -25,6 +25,7 @@ def main(page: ft.Page):
         expand=True,
         bgcolor=ft.colors.WHITE,  # Fondo blanco para el contenido
         padding=20,
+        height=page.height,  # Mantener el tamaño de la pantalla
     )
 
     # Función para cambiar el contenido de la pantalla
@@ -170,6 +171,8 @@ def main(page: ft.Page):
         ),
         expand=False,
         width=200,  # Ancho fijo del menú lateral
+        height=page.height,  # Altura fija para el menú lateral
+        padding=ft.Padding(10, 0, 10, 0),
     )
 
     # Layout principal
