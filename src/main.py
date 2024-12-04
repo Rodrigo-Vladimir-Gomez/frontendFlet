@@ -71,7 +71,7 @@ def main(page: ft.Page):
                         padding=ft.Padding(10, 15, 10, 15),  # Ajuste de tamaño con padding
                     ),
                     width=200,
-                    height=65,
+                    height=50,
                 ),
                 ft.ElevatedButton(
                     text="Usuarios",
@@ -84,7 +84,7 @@ def main(page: ft.Page):
                         padding=ft.Padding(10, 15, 10, 15),  # Ajuste de tamaño con padding
                     ),
                     width=200,
-                    height=65,
+                    height=50,
                 ),
                 ft.ElevatedButton(
                     text="Proyectos",
@@ -97,7 +97,7 @@ def main(page: ft.Page):
                         padding=ft.Padding(10, 5, 10, 5),
                     ),
                     width=200,
-                    height=65,
+                    height=50,
                 ),
                 ft.ElevatedButton(
                     text="Vehiculos",
@@ -110,7 +110,7 @@ def main(page: ft.Page):
                         padding=ft.Padding(10, 5, 10, 5),
                     ),
                     width=200,
-                    height=65,
+                    height=50,
                 ),
                 ft.ElevatedButton(
                     text="Roles",
@@ -123,7 +123,7 @@ def main(page: ft.Page):
                         padding=ft.Padding(10, 5, 10, 5),
                     ),
                     width=200,
-                    height=65,
+                    height=50,
                 ),
                 ft.ElevatedButton(
                     text="Logs",
@@ -136,7 +136,7 @@ def main(page: ft.Page):
                         padding=ft.Padding(10, 5, 10, 5),
                     ),
                     width=200,
-                    height=65,
+                    height=50,
                 ),
                 ft.ElevatedButton(
                     text="Bitacora",
@@ -149,7 +149,20 @@ def main(page: ft.Page):
                         padding=ft.Padding(10, 5, 10, 5),
                     ),
                     width=200,
-                    height=65,
+                    height=50,
+                ),
+                ft.ElevatedButton(
+                    text="Salir",
+                    on_click=lambda e: cambiar_pantalla(e),
+                    data="pantalla_inicio",
+                    style=ft.ButtonStyle(
+                        color=ft.colors.WHITE,  # Texto blanco
+                        bgcolor=ft.colors.RED,  # Fondo azul
+                        elevation=3,  # Sombras del botón
+                        padding=ft.Padding(10, 5, 10, 5),
+                    ),
+                    width=200,
+                    height=50,
                 ),
             ],
             alignment=ft.MainAxisAlignment.START,
