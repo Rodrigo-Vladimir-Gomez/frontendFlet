@@ -195,6 +195,6 @@ def main(page: ft.Page):
 
 if __name__ == "__main__":
     # Obtiene el puerto asignado dinámicamente por Render
-    port = int(os.environ.get("PORT", 800))  # 8000 es el valor por defecto para pruebas locales
+    port = int(os.environ.get("PORT", 8000))  # 8000 es el valor por defecto para pruebas locales
     # Inicia la aplicación usando Flet en el puerto correcto
     ft.app(target=main)
